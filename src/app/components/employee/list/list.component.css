@@ -1,0 +1,88 @@
+.pending-container{
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.leave-list-body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 10px 30px;
+
+}
+.leave-item{
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  box-shadow: 1px 2px #666;
+  border-radius: 2px;
+}
+
+.leave-list-header h2{
+  margin: 0px;
+  padding: 10px;
+}
+
+.leave-list-header{
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  font-family: "Lora", serif;
+  letter-spacing: 0.1em;
+}
+
+.leave-item > span, .ticket-item > span{
+  display: block;
+}
+
+.div{
+  padding-top: 10px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.pending{
+  color: #ccc;
+}
+
+.not-pending{
+  color: green;
+}
+
+.status{
+  margin: 10px 0px;
+}
+
+.btn{
+  border: 1px solid #ccc !important;
+}
+
+.btn-archive:hover,.btn-ticket:hover {
+  color: #ff4800;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.ticket-item{
+  padding: 10px 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.ticket-item:nth-child(even){
+  background-color: #eee;
+}
+
+.RED{
+  color: red;
+}
+.BLUE{
+  color: blue;
+}
+.GREEN{
+  color: green;
+}
+
+.btn-ticket{
+  width: 15%;
+  margin-top: 15px;
+}

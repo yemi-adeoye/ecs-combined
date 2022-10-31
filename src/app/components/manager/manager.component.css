@@ -1,0 +1,30 @@
+.employee-container{
+  margin: 0px 100px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 15% 1fr 1fr;
+  grid-template-rows: 3fr 9fr;
+
+}
+
+.user{
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  border-right: 1px solid #ccc;
+  padding-top: 30px;
+
+}
+
+.leaves-ticket-form{
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding-top: 30px;
+}
+
+.leaves-ticket-info{
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}

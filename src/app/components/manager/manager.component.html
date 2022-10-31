@@ -1,0 +1,16 @@
+<div class="employee-container">
+  <div class="user">
+    <app-manager-info [manager]="manager" [employees]="employees"></app-manager-info>
+  </div>
+
+  <div class="leaves-ticket-form">
+    <!-- Ticket component goes here -->
+    <app-manager-access [employees]="employeeNoAccess" (grant)="grantAccess($event)"></app-manager-access>
+    <app-manager-leaves [leaves]="leaves"></app-manager-leaves>
+  </div>
+
+  <div class="leaves-ticket-info">
+    <app-manager-ticket></app-manager-ticket>
+  </div>
+</div>
+

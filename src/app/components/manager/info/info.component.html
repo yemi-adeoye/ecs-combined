@@ -1,0 +1,24 @@
+
+<div class="user-container">
+  <div class="avatar-container">
+    <img class="avatar" src="https://randomuser.me/api/portraits/men/75.jpg" />
+  </div>
+  <div class="user-info">
+    <span>{{ manager?.name }}</span>
+    <span>{{ manager?.email }}</span>
+    <span class="bold">{{ manager?.jobTitle }}</span>
+
+  </div>
+  <div class="leave-info">
+    <h4>Employee List </h4>
+          <ol>
+              <li *ngFor="let e of employees">
+                {{e.name}} , {{e.jobTitle}}
+              </li>
+          </ol>
+  </div>
+  <div class="logout" style="margin-bottom: 0">
+    <button (click)="onLogout()" class="btn btn-logout">Logout</button>
+  </div>
+</div>
+

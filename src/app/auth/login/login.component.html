@@ -1,0 +1,25 @@
+<div class="row">
+  <form class="form col-lg-4 col-md-8 col-sm-10 col-xs-12 p-4 mx-auto" (submit)="onFormSubmit()" [formGroup]="loginForm">
+    <span class="error">
+        {{msg}}
+    </span>
+    <div class="form-group start">
+      <label>Email</label>
+      <input type="email" class="form-control" name="email" formControlName="email">
+    </div>
+
+    <div class="form-group mb-4">
+      <label>Password: </label>
+      <input type="password" class="form-control" name="password" formControlName="password">
+    </div>
+
+    <div class="form-group mb-4">
+      <input type="submit" class="btn form-control" value="Login" [disabled]="loginForm.invalid">
+    </div>
+
+    <div class="form-footer">
+      <a routerLink="/sign-up">Request Access</a> | <a routerLink="/forgot-password">Forgot Password?</a>
+    </div>
+
+  </form>
+</div>

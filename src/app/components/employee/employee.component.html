@@ -1,0 +1,19 @@
+<div class="employee-container">
+  <div class="user">
+    <app-employee-info [employee]="employee"></app-employee-info>
+  </div>
+
+  <div class="leaves-ticket-form">
+    <!-- Ticket component goes here -->
+    <app-employee-ticket></app-employee-ticket>
+    <app-employee-leave></app-employee-leave>
+  </div>
+
+  <div class="leaves-ticket-info">
+    <app-employee-list
+      [tickets]="tickets"
+      [leaves]="leaveArry"
+      (status)="onStatusUpdate($event)"
+    ></app-employee-list>
+  </div>
+</div>

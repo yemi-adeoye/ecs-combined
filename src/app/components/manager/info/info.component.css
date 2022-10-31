@@ -1,0 +1,56 @@
+.user-container {
+  background-color: #fff;
+  margin: 0;
+}
+
+.avatar-container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.avatar {
+  border: 1px solid #333;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.user-info > span, .leave-info > span{
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.user-info > span{
+  margin-top: 5px;
+}
+
+.user-info .bold{
+  font-weight: bold;
+}
+
+.demarcate{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0px;
+}
+
+.btn{
+  width: 100%;
+}
+
+.btn-logout{
+  margin-top: 10px;
+  border: none;
+  padding: 5px 0px;
+  background:none;
+  color: #000;
+}
+
+.btn-logout:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ff4800;
+  cursor: pointer;
+}

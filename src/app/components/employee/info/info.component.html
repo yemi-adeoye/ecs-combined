@@ -1,0 +1,19 @@
+<div class="user-container">
+  <div class="avatar-container">
+    <img class="avatar" src="https://randomuser.me/api/portraits/men/75.jpg" />
+  </div>
+  <div class="user-info">
+    <span>{{ employee?.name }}</span>
+    <span>{{ employee?.email }}</span>
+    <span class="bold">{{ employee?.jobTitle }}</span>
+    <span class="demarcate">Manager<br>{{ employee?.managerName }}</span>
+
+  </div>
+  <div class="leave-info">
+    <span>Leave Granted: {{ employee?.totalLeaves }}</span>
+    <span>Leave Available: {{ employee?.leavesLeft }}</span>
+  </div>
+  <div class="logout" style="margin-bottom: 0">
+    <button (click)="onLogout()" class="btn btn-logout">Logout</button>
+  </div>
+</div>

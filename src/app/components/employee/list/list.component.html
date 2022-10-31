@@ -1,0 +1,47 @@
+<div class="pending-container">
+  <div class="leave-list-header">
+    <h2>Pending Leaves</h2>
+  </div>
+
+  <div class="leave-list-body">
+    <div class="leave-item" *ngFor="let l of leaves">
+      <span class="bold">From</span>
+      <span>{{ l.from | date: "shortDate" }}</span>
+
+      <span class="bold div">To</span>
+      <span>{{ l.to | date: "shortDate" }}</span>
+
+      <span class="div">{{ l.days }} day(s)</span>
+
+      <span
+        class="status"
+        [ngClass]="l.status == 'PENDING' ? 'pending' : 'not-pending'"
+        >{{ l.status }}</span
+      >
+      <div class="ticket-response" *ngIf="l.comments">
+        {{ l.comments }}
+      </div>
+      <button class="btn">Archive</button>
+    </div>
+  </div>
+</div>
+
+<div class="pending-container">
+  <div class="leave-list-header">
+    <h2>Open Tickets</h2>
+  </div>
+
+  <div class="ticket-list-body">
+    <div class="ticket-item" *ngFor="let t of tickets">
+      <span>Issue: {{ t.issue }}</span>
+      <span class="div">Priority: <span class="{{ t.priority }}">{{ t.priority }}</span></span>
+      <span class="div">Posted At: {{ t.generatedDate | date: "shortDate" }} </span>
+      <div class="ticket-response" *ngIf="t.response">
+        {{ t.response }}
+      </div>
+      <button class="btn mt-2" (click)="onCloseTicket(t.id)">
+        Close the ticket
+      </button>
+    </div>
+  </div>
+</div>
